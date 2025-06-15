@@ -7,6 +7,7 @@ from openai import OpenAI
 load_dotenv(find_dotenv(), override=True)
 # Entorno Local
 apiKey = os.environ.get('OPENAI_API_KEY')
+#apiKey=
 st.write("🔐 API Key cargada:", apiKey is not None)
 client = OpenAI(api_key=apiKey)
 

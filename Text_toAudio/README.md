@@ -16,9 +16,10 @@ Esta aplicación convierte texto en voz utilizando la API de OpenAI (`tts-1`) y 
 
 ## 🛠️ Instalación y ejecución local
 
-### 1. Clona el repositorio
+### 1. Clona el repositorio Y crear entorno
 
 ```bash
 git clone https://github.com/tu_usuario/tu_repositorio.git
 cd tu_repositorio
-
+pip install python-dotenv
+pip install -r requirements.txt
