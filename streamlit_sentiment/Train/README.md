@@ -4,7 +4,4 @@ Este proyecto implementa un pipeline de análisis de sentimientos usando el data
 
 Los modelos y el vectorizador se guardan en archivos `.pkl` y se puede usar una interfaz Streamlit para probar predicciones en tiempo real.
 
----
-
-## 📂 Estructura del Proyecto
 

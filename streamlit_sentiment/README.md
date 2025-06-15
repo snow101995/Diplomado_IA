@@ -1,7 +1,6 @@
 # Sentiment Analysis con modelos de Machine Learning
 
-Este proyecto realiza análisis de sentimiento utilizando el dataset de Clasificación de peliculas. 
-Se entrenan tres modelos de Machine Learning: Naive Bayes, SVM y Regresión Logística. Se exportan los modelos y el vectorizador para su uso posterior.
+Este proyecto realiza análisis de sentimiento utilizando el dataset de Twitter `sentiment140`. Se entrenan tres modelos de Machine Learning: Naive Bayes, SVM y Regresión Logística. Se exportan los modelos y el vectorizador para su uso posterior.
 
 ---
 
@@ -26,7 +25,12 @@ Asegúrate de tener instalado:
    ```bash
    python -m venv venv
 
-4. **Instala las dependencias del proyecto
+4. **Instala las dependencias del proyecto**
 
    ```bash
 	pip install -r requirements.txt
+
+5. **En el terminar ejecutar la aplicación**
+
+   ```bash
+	streamlit run app.py
