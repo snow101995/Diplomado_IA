@@ -19,6 +19,10 @@ def preprocess_text(text):
     text = ' '.join(text)
     return text
 
+# APP mostrar ruta actual:
+import os
+st.write("Ruta actual:", os.getcwd())
+
 # Load the vectorizer and models
 vectorizer = joblib.load('./model/tfidf_vectorizer.pkl')
 svm_model = joblib.load('./model/svm_model.pkl')
@@ -67,4 +71,4 @@ if st.button("Analyze"):
             lr_prob = lr_model.predict_proba(input_text_vect)[0]
             st.write(f"**Logistic Regression Prediction:** {'Positive' if lr_prediction == 1 else 'Negative'} (Confidence: {lr_prob[lr_prediction]:.2f})")
 
-# /workspaces/Diplomado_IA/streamlit_sentiment/model/naive_bayes_model.pkl
+
