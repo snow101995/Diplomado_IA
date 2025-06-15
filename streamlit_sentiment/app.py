@@ -18,8 +18,9 @@ def preprocess_text(text):
     return text
 
 # APP mostrar ruta actual:
-import os
-st.write("Ruta actual:", os.getcwd())
+# import os
+st.write("Autor: Julio Bernal")
+st.write("Version: 1.0")
 
 # Load the vectorizer and models
 vectorizer = joblib.load('./model/tfidf_vectorizer.pkl')
