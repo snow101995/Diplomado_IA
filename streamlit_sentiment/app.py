@@ -17,15 +17,17 @@ def preprocess_text(text):
     text = ' '.join(text)
     return text
 
-# APP mostrar ruta actual:
-# import os
+# View the path
 st.write("Autor: Julio Bernal")
 st.write("Version: 1.0")
-import os
-st.write("📂 Ruta actual:", os.getcwd())
+#import os
+#st.write("📂 Ruta actual:", os.getcwd())
 
 
 # Load the vectorizer and models
+# test use ./model/.....
+# production use streamlit_sentiment/model/....
+
 vectorizer = joblib.load('streamlit_sentiment/model/tfidf_vectorizer.pkl')
 svm_model = joblib.load('streamlit_sentiment/model/svm_model.pkl')
 nb_model = joblib.load('streamlit_sentiment/model/naive_bayes_model.pkl')
