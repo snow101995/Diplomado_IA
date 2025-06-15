@@ -5,8 +5,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-# Download stopwords from NLTK
-nltk.download('stopwords')
 
 # Function for text preprocessing
 def preprocess_text(text):
